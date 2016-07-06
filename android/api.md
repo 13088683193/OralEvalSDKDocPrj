@@ -333,3 +333,13 @@
 |参数 audioData|录音数据。数据格式根据[OralEvalSDKFactory.StartConfig](#oralevalsdkfactorystartconfig).setMp3Audio()设置|
 |参数 offset| 实时录音的音频音量值，0-100范围|
 |参数 len 实时录音的音频音量值，0-100范围|
+
+<br/>
+*public void onAsyncResult([IOralEvalSDK](#ioralevalsdk) who, String url);
+
+| | |
+| ----- | ----- |
+| 说明| 延迟评测回调，默认为不启用，需要设置 public void setAsyncRecognize(boolean asyncRecognize)为true|
+|版本支持| 最低3.6.14|
+|参数 who|评测实例。标示谁发起了此回调|
+|参数 url| 延迟评测结果所在的地址|
