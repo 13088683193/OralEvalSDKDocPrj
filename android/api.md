@@ -199,6 +199,16 @@
 |参数 bufferLog|true，内部保存Log；否则，内部不保存Log|
 
 <br/>
+
+* public void setAsyncRecognize(boolean asyncRecognize)
+
+| | |
+| ----- | ----- |
+| 说明|设置是否启用延迟评测。|
+|版本支持| 最低3.6.14 |
+|参数 asyncRecognize|true启用延迟评测，false不启用延迟评测，默认不启用|	
+<br/>
+
 ### <a name="ioralevalsdk"></a> IOralEvalSDK
 
 <br/>
