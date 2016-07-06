@@ -335,7 +335,7 @@
 |参数 len 实时录音的音频音量值，0-100范围|
 
 <br/>
-*public void onAsyncResult([IOralEvalSDK](#ioralevalsdk) who, String url);
+* public void onAsyncResult([IOralEvalSDK](#ioralevalsdk) who, String url);
 
 | | |
 | ----- | ----- |
