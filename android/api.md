@@ -314,6 +314,14 @@
 |参数 stopType| 结束评测的原因。UserAction是调用[IOralEvalSDK](#ioralevalsdk).stop()结束，VoiceEnd是VAD检测到完成说话结束，NoVoice是VAD检测到长时间没有人说话结束,InputStreamEnd是当使用非mic音频源评测时，音频流结束或读取失败|
 
 <br/>
+* public void onCancel()
+
+| | |
+| ----- | ----- |
+| 说明| 取消评测回调。无返回结果，评测会自动结束，需要手动调用[IOralEvalSDK](#ioralevalsdk).cancel() |
+|版本支持| 最低2.0.0 |
+
+<br/>
 * public void onVolume([IOralEvalSDK](#ioralevalsdk) who, int value)
 
 | | |
