@@ -99,5 +99,16 @@ public void onClick(){
             }
         });
     }
-
+    
+    //取消评测回调
+    @Override
+    public void onCancel() {
+        Log.i(TAG, "onCancel()");
+        this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                _oe = null;
+            }
+        });
+    }
 ```
