@@ -215,6 +215,14 @@
 评测实例，从[OralEvalSDKFactory](#oralevalsdkfactory).start()创建。一个时刻只能有一个评测实例。
 <br/>
 
+* public void cancel()
+
+| | |
+| ----- | ----- |
+| 说明| 取消评测，将会在[IOralEvalSDK.ICallback](#ioralevalsdkicallback).onCancel()回调中完全结束上次评测，或者[IOralEvalSDK.ICallback](#ioralevalsdkicallback).onError()中捕获错误|
+|版本支持| 最低3.6.16 |
+
+<br/>
 * public void stop()
 
 | | |
