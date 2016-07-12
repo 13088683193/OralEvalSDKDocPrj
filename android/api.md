@@ -319,7 +319,7 @@
 | | |
 | ----- | ----- |
 | 说明| 取消评测回调。无返回结果，评测会自动结束，需要手动调用[IOralEvalSDK](#ioralevalsdk).cancel() |
-|版本支持| 最低2.0.0 |
+|版本支持| 最低3.6.16 |
 
 <br/>
 * public void onVolume([IOralEvalSDK](#ioralevalsdk) who, int value)
