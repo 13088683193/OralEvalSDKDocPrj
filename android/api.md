@@ -209,6 +209,15 @@
 |参数 asyncRecognize|true启用延迟评测，false不启用延迟评测，默认不启用|	
 <br/>
 
+* public void setReTry(boolean reTry)
+
+| | |
+| ----- | ----- |
+| 说明|设置是否使用重试，注意：如果使用重试，在构造OralEvalSDKFactory.StartConfig实例时需要用StartConfig(String oralText, String fileFullName)进行构造，且fileFullName文件为opus格式的文件，可参考demo|
+|版本支持| 最低v3.6.17 |
+|参数 reTry|true使用重试，false不使用重试，默认不使用|	
+<br/>
+
 ### <a name="ioralevalsdk"></a> IOralEvalSDK
 
 <br/>
@@ -349,6 +358,17 @@
 |参数 audioData|录音数据。数据格式根据[OralEvalSDKFactory.StartConfig](#oralevalsdkfactorystartconfig).setMp3Audio()设置|
 |参数 offset| 实时录音的音频音量值，0-100范围|
 |参数 len 实时录音的音频音量值，0-100范围|
+
+<br/>
+* public void onOpusData([IOralEvalSDK](#ioralevalsdk) who, byte[] opusData, int offset, int len)
+
+| | |
+| ----- | ----- |
+| 说明| 评测实时opus流数据回调 |
+|版本支持| 最低v3.6.17 |
+|参数 opusData|opus流数据|
+|参数 offset| 实时录音的opus流数据的偏移值|
+|参数 len |实时录音的opus流数据的总长度|
 
 <br/>
 * public void onAsyncResult([IOralEvalSDK](#ioralevalsdk) who, String url);
