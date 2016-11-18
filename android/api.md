@@ -90,6 +90,16 @@
 |参数 uid|用户标识，如用户名等可以唯一识别用户的字符串|
 
 <br/>
+
+* public void setOnline_ip(String online_ip)
+
+| | |
+| ----- | ----- |
+| 说明|设置在线评测ip和端口号，默认不设置，在线评测就走我们内部默认的ip和端口号，如果设置了ip和端口号，在线评测就走设置的ip和端口号|
+|版本支持| 最低3.6.22 |
+|参数 online_ip|ip和端口号组成的字符串|
+
+<br/>
 * public void setVadEnable(boolean vadEnable)
 
 | | |
